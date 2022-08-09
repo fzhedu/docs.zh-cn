@@ -22,7 +22,7 @@
 
 3. 单击 Propose changes，提交文档变更。
 4. 新建PR，输入PR标题和描述，然后单击 Create pull request。
-   ![image](https://user-images.githubusercontent.com/98087056/183545930-5efed04c-baca-4294-9eba-df40260e9751.png)
+   ![image](https://user-images.githubusercontent.com/98087056/183552303-0853e1aa-3948-49e1-8240-7d30b6d7809b.png)
 
 5. PR 进入评审阶段，评审通过后，文档变更会合入至 StarRocks 文档仓库，并最终更新至官网。
    评审阶段分为自动检查和人工评审。
@@ -48,7 +48,7 @@
 
 2. 编写文档（markdown格式），并在索引（TOC.md）中添加索引。
     > 由于文档为markdown格式，建议您提前使用markdown-lint验证格式的规范性。
-3. 在github上提交文档Propose new file，输入标题和描述，然后提交创建PR。
+3. 在github上提交文档Propose new file，输入标题和描述，然后提交，创建PR。
    ![image](https://user-images.githubusercontent.com/98087056/183547476-bf3adca9-dde9-4205-a2a9-ea6210e9ba48.png)
 
 4. PR 进入评审阶段，评审通过后，文档变更会合入至 StarRocks 文档仓库，并最终更新至官网。

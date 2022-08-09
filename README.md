@@ -11,24 +11,25 @@
 ## 提交PR修改文档
 
 如果您发现文档里部分描述有误或需要更新，可提交PR直接贡献修改。
+
 1. 进入文档编辑页面。
+
 - 方式一：在官网文档中，单击右上角的**编辑**，选择对应的文档分支后（一般为 main 分支），进入文档编辑页面。
 - 方式二：登录 GitHub 帐户，直接在[中文文档仓库](https://github.com/StarRocks/docs.zh-cn)找到对应文档，单击文档右上角的铅笔图标，进入文档编辑页面。
-![image](https://user-images.githubusercontent.com/98087056/183545639-cdea3e25-5fee-445e-8de9-4ec4aa583828.png)
+   ![image](https://user-images.githubusercontent.com/98087056/183545639-cdea3e25-5fee-445e-8de9-4ec4aa583828.png)
 
 2. 完成文档编辑后，在页面底部的 Propose changes 区域中，输入此次文档变更的标题或更多描述。
-![image](https://user-images.githubusercontent.com/98087056/183545158-c5dd5e53-37c8-482b-8d15-51c2a21689cb.png)
+   ![image](https://user-images.githubusercontent.com/98087056/183545158-c5dd5e53-37c8-482b-8d15-51c2a21689cb.png)
 
 3. 单击 Propose changes，提交文档变更。
 4. 新建PR，输入PR标题和描述，然后单击 Create pull request。
-![image](https://user-images.githubusercontent.com/98087056/183545930-5efed04c-baca-4294-9eba-df40260e9751.png)
+   ![image](https://user-images.githubusercontent.com/98087056/183545930-5efed04c-baca-4294-9eba-df40260e9751.png)
 
 5. PR 进入评审阶段，评审通过后，文档变更会合入至 StarRocks 文档仓库，并最终更新至官网。
 评审阶段分为自动检查和人工评审。
 
    1. 自动检查：提交人是否已经签署[CLA](https://cla-assistant.io/StarRocks/starrocks)，提交文档是否符合markdown语法。
    2. 人工评审：Commiter会阅读并沟通文档内容。最终合入至StarRocks文档仓库，并更新官网。
-
 
 ## 贡献新文档
 
@@ -45,7 +46,7 @@
 ### 编写流程
 
 1. 登录 GitHub 帐户，直接在[中文文档仓库](https://github.com/StarRocks/docs.zh-cn)单击 Add file，进入新文档编辑页面。
-![image](https://user-images.githubusercontent.com/98087056/183546267-f05f6afc-4d58-40f8-ba73-437f82d5f662.png)
+   ![image](https://user-images.githubusercontent.com/98087056/183546267-f05f6afc-4d58-40f8-ba73-437f82d5f662.png)
 
 2. 编写文档（markdown格式），并在索引（TOC.md）中添加索引。
 
@@ -53,11 +54,11 @@
     > - 添加索引时，请注意函数分类。
 
 3. 在github上提交文档Propose new file，输入标题和描述，然后提交创建PR。
-![image](https://user-images.githubusercontent.com/98087056/183547476-bf3adca9-dde9-4205-a2a9-ea6210e9ba48.png)
+   ![image](https://user-images.githubusercontent.com/98087056/183547476-bf3adca9-dde9-4205-a2a9-ea6210e9ba48.png)
 
 4. PR 进入评审阶段，评审通过后，文档变更会合入至 StarRocks 文档仓库，并最终更新至官网。
 
 ## 文档模板
 
-[函数文档模板](./sql-reference/sql-functions/How%20to%20Write%20Functions%20Documentation.md)
+[函数文档模板](./sql-reference/sql-functions/How%20to%20Write%20Functions%20Documentation.md)<br>
 [SQL命令模板](./sql-reference/How%20to%20write%20SQL%20command%20doc.md)

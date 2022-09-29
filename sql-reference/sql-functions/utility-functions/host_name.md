@@ -30,4 +30,3 @@ mysql> select host_name();
 +-------------+
 1 row in set (0.01 sec)
 ```
-```

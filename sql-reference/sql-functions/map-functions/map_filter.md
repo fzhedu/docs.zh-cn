@@ -68,6 +68,7 @@ mysql> select map_filter(col_map, null) from (select map_from_arrays([1,3,null,2
 ```
 
 ### 使用 lambda 表达式
+
 ```SQL
 
 mysql> select map_filter((k,v) -> v is not null,col_map) from (select map_from_arrays([1,3,null,2,null],['ab','cdd',null,null,'abc']) as col_map)A;

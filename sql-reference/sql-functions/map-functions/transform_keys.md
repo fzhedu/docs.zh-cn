@@ -13,6 +13,7 @@ StarRocks 从 2.5 版本开始支持查询数据湖中的复杂数据类型 MAP 
 ```Haskell
 map transform_keys(lambda func, any_map)
 ```
+
 lambda func 也可以放在 any_map 之后， 即:
 
 ```Haskell

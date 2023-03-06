@@ -14,6 +14,7 @@ StarRocks 从 2.5 版本开始支持查询数据湖中的复杂数据类型 MAP 
 map map_filter(any_map, array<boolean>)
 map map_filter(lambda func, any_map)
 ```
+
 - `map_filter(any_map, array<boolean>)`
 
   保留 `any_map` 在 `array<boolean>` 中一一对应位置的值为 `true` 的 key-value 对。
@@ -39,6 +40,7 @@ map map_filter(lambda func, any_map)
 ## 示例
 
 ### 不使用 lambda 表达式
+
 ```SQL
 mysql> select map_filter(col_map, array<boolean>[0,0,0,1,1]) from (select map_from_arrays([1,3,null,2,null],['ab','cdd',null,null,'abc']) as col_map)A;
 +----------------------------------------------------+
@@ -67,6 +69,7 @@ mysql> select map_filter(col_map, null) from (select map_from_arrays([1,3,null,2
 
 ### 使用 lambda 表达式
 ```SQL
+
 mysql> select map_filter((k,v) -> v is not null,col_map) from (select map_from_arrays([1,3,null,2,null],['ab','cdd',null,null,'abc']) as col_map)A;
 +------------------------------------------------+
 | map_filter((k,v) -> v is not null, col_map)    |

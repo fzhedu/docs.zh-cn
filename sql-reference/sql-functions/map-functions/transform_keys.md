@@ -38,7 +38,7 @@ Lambda 函数里必须有两个参数，第一个代表 key，第二个代表 va
 
 ## 示例
 
-以下示例使用 map_from_arrays() 生成一个 map 值 `{1:"ab",3:"cdd",2:null,null:"abc"}`。然后将 Lambda 函数应用到 map 中的每个 key，对 key 加 1。
+以下示例使用 [map_from_arrays](map_from_arrays.md) 生成一个 map 值 `{1:"ab",3:"cdd",2:null,null:"abc"}`。然后将 Lambda 函数应用到 map 中的每个 key，对 key 加 1。
 
 ```SQL
 mysql> select transform_keys((k,v)->(k+1), col_map) from (select map_from_arrays([1,3,null,2,null],['ab','cdd',null,null,'abc']) as col_map)A;

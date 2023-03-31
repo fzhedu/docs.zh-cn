@@ -39,11 +39,13 @@ MAP map_filter(lambda_func, any_map)
 
 如果 MAP 中的某个 key 或 value 是 NULL，该 NULL 值正常参与计算并返回。
 
+Lambda 函数里必须有两个参数，第一个代表 key，第二个代表 value。
+
 ## 示例
 
 ### 不使用 lambda 表达式
 
-以下示例使用 map_from_arrays() 生成一个 map 值 `{1:"ab",3:"cdd",2:null,null:"abc"}`。然后将 `array<boolean>` 应用到 map 里的每个 key-value 对，返回为结果 true 的 key-value 对。
+以下示例使用 [map_from_arrays](map_from_arrays.md) 生成一个 map 值 `{1:"ab",3:"cdd",2:null,null:"abc"}`。然后将 `array<boolean>` 应用到 map 里的每个 key-value 对，返回为结果 true 的 key-value 对。
 
 ```SQL
 mysql> select map_filter(col_map, array<boolean>[0,0,0,1,1]) from (select map_from_arrays([1,3,null,2,null],['ab','cdd',null,null,'abc']) as col_map)A;
